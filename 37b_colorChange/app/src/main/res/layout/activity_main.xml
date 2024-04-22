@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/LL_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="015dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/LL_R"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="015dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/L_R"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="015dp"
+                android:layout_marginBottom="15dp"
+                android:text="R :  "
+                android:textAlignment="center"
+                android:textSize="40dp" />
+
+            <EditText
+                android:id="@+id/T_R"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="015dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LL_G"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="015dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/L_G"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="015dp"
+                android:layout_marginBottom="15dp"
+                android:text="G :  "
+                android:textAlignment="center"
+                android:textSize="40dp" />
+
+            <EditText
+                android:id="@+id/T_G"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="015dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LL_B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="015dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/L_B"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="015dp"
+                android:layout_marginBottom="15dp"
+                android:text="R :  "
+                android:textAlignment="center"
+                android:textSize="40dp" />
+
+            <EditText
+                android:id="@+id/T_B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="015dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/B_word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="015dp"
+            android:layout_marginBottom="15dp"
+            android:onClick="changeWord"
+            android:text="Word Only" />
+
+        <Button
+            android:id="@+id/B_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="015dp"
+            android:layout_marginBottom="15dp"
+            android:onClick="changeBackground"
+            android:text="Background only" />
+
+        <Button
+            android:id="@+id/B_random"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="015dp"
+            android:layout_marginBottom="15dp"
+            android:onClick="changerandom"
+            android:text="Change random" />
+
+    </LinearLayout>
+
+</LinearLayout>

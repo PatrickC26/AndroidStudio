@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/LL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#A1A1A1"
+            android:gravity="center|top"
+            android:orientation="vertical"
+            android:textAlignment="center">
+
+            <Button
+                android:id="@+id/B_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="changeColor"
+                android:text="Change"
+                android:textColor="#BC9696"
+                android:textSize="50dp" />
+
+            <TextView
+                android:id="@+id/L_R"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="R : 0"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/L_G"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="G : 0"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/L_B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="B : 0"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/L_color"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"></LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

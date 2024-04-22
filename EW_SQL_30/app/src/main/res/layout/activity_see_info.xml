@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".seeInfo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".addNew"
+        tools:layout_editor_absoluteX="-179dp"
+        tools:layout_editor_absoluteY="-234dp">
+
+        <TextView
+            android:id="@+id/L_id"
+            android:layout_width="68dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:text="ID："
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/T_bookName"
+            android:layout_width="221dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="100dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toEndOf="@+id/L_bookName_Show"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/L_bookName_Show"
+            android:layout_width="68dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="108dp"
+            android:text="書名："
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/L_price_Show"
+            android:layout_width="68dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="48dp"
+            android:text="書價："
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/L_bookName_Show" />
+
+        <TextView
+            android:id="@+id/L_person_Show"
+            android:layout_width="67dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="44dp"
+            android:text="訂購人："
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/L_price_Show" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="67dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="28dp"
+            android:text="已結帳："
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/L_person_Show" />
+
+        <Button
+            android:id="@+id/B_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="161dp"
+            android:layout_marginTop="92dp"
+            android:layout_marginEnd="162dp"
+            android:text="Update"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/C_hasCheckout" />
+
+        <CheckBox
+            android:id="@+id/C_hasCheckout"
+            android:layout_width="212dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:text="是"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/T_orderPerson" />
+
+        <EditText
+            android:id="@+id/T_orderPerson"
+            android:layout_width="221dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toEndOf="@+id/L_person_Show"
+            app:layout_constraintTop_toBottomOf="@+id/T_bookPrice"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/B_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="60dp"
+            android:text="next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/C_hasCheckout" />
+
+        <Button
+            android:id="@+id/B_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="28dp"
+            android:text="prevoius"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/C_hasCheckout" />
+
+        <Button
+            android:id="@+id/B_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="161dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="161dp"
+            android:text="delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/B_update" />
+
+        <EditText
+            android:id="@+id/T_bookPrice"
+            android:layout_width="218dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toEndOf="@+id/L_price_Show"
+            app:layout_constraintTop_toBottomOf="@+id/T_bookName"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

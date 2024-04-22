@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/IG2"
+        android:layout_width="163dp"
+        android:layout_height="149dp"
+        android:foreground="@drawable/angrybird" />
+
+    <ImageView
+        android:id="@+id/IG1"
+        android:layout_width="159dp"
+        android:layout_height="148dp"
+        android:foreground="@drawable/leon" />
+
+    <ImageView
+        android:id="@+id/IG3"
+        android:layout_width="161dp"
+        android:layout_height="150dp"
+        android:foreground="@drawable/elephant" />
+
+    <TextView
+        android:id="@+id/L_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="「開始」開始作答"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/L_buffer"
+        android:layout_width="match_parent"
+        android:layout_height="90dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:onClick="start"
+        android:text="開始" />
+
+</LinearLayout>

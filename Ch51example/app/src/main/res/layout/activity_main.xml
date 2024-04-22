@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/B_order"
+        android:layout_width="329dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="11dp"
+        android:height="50dp"
+        android:onClick="press"
+        android:text="訂購"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="129dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <CheckBox
+            android:id="@+id/CB_hamburger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="漢堡" />
+
+        <ImageView
+            android:id="@+id/CB_I_ham"
+            android:layout_width="52dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/hamburger" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="78dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/B_order"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <CheckBox
+            android:id="@+id/CB_cola"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可樂" />
+
+        <ImageView
+            android:id="@+id/CB_I_cola"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/cola" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="128dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="68dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <CheckBox
+            android:id="@+id/CB_frenchfried"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="薯條" />
+
+        <ImageView
+            android:id="@+id/CB_I_fried"
+            android:layout_width="50dp"
+            android:layout_height="43dp"
+            app:srcCompat="@drawable/frenchfrie" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="133dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/B_order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <CheckBox
+            android:id="@+id/CB_soup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="玉米濃湯" />
+
+        <ImageView
+            android:id="@+id/CB_I_soup"
+            android:layout_width="50dp"
+            android:layout_height="43dp"
+            app:srcCompat="@drawable/soup" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="195dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/B_order">
+
+        <TextView
+            android:id="@+id/T_alert"
+            android:layout_width="376dp"
+            android:layout_height="116dp"
+            android:text="請點餐"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="400dp"
+            android:layout_height="104dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/I_hamburger"
+                android:layout_width="100dp"
+                android:layout_height="96dp"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/hamburger" />
+
+            <ImageView
+                android:id="@+id/I_soup"
+                android:layout_width="100dp"
+                android:layout_height="99dp"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/soup" />
+
+            <ImageView
+                android:id="@+id/I_cola"
+                android:layout_width="100dp"
+                android:layout_height="96dp"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/cola" />
+
+            <ImageView
+                android:id="@+id/I_french"
+                android:layout_width="100dp"
+                android:layout_height="96dp"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/frenchfrie" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

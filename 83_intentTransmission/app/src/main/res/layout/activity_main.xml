@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="gravity"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/L_1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:text=" 1. "
+                android:textAlignment="viewStart"
+                android:textSize="20sp"
+                tools:ignore="RtlCompat" />
+
+            <View
+                android:id="@+id/D1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/L_2"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:text=" 2."
+                android:textAlignment="viewStart"
+                android:textSize="20sp"
+                tools:ignore="RtlCompat" />
+
+            <View
+                android:id="@+id/D2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/L_3"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:text=" 3."
+                android:textAlignment="viewStart"
+                android:textSize="20sp"
+                tools:ignore="RtlCompat" />
+
+            <View
+                android:id="@+id/D3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/L_4"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:text=" 4."
+                android:textAlignment="viewStart"
+                android:textSize="20sp"
+                tools:ignore="RtlCompat" />
+
+            <View
+                android:id="@+id/D4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/L_5"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:text=" 5."
+                android:textAlignment="viewStart"
+                android:textSize="20sp"
+                tools:ignore="RtlCompat" />
+
+            <View
+                android:id="@+id/D5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/L_6"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:text=" 6."
+                android:textAlignment="viewStart"
+                android:textSize="20sp"
+                tools:ignore="RtlCompat" />
+
+            <View
+                android:id="@+id/D6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

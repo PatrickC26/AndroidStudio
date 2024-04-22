@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ch2_editText</string>
+    <string name="Bigger" />
+    <string name="Smaller">smaller</string>
+</resources>

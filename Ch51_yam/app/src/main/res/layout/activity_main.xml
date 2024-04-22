@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/LL_1"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/L_money"
+            android:layout_width="384dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="地瓜價錢(元)"
+            android:textSize="30sp" />
+
+        <RadioGroup
+            android:id="@+id/R_money"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/money1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="斤"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/money2"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="公斤"
+                android:textSize="20sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/T_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+    <LinearLayout
+        android:id="@+id/LL_2"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/L_weight"
+            android:layout_width="384dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="地瓜重量"
+            android:textSize="30sp" />
+
+        <RadioGroup
+            android:id="@+id/R_weight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/weight1"
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="斤"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/weight2"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="公斤"
+                android:textSize="20sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/T_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/LF_money1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="2dp"
+        android:text="每斤價格："
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/LF_money2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="2dp"
+        android:text="每公斤價格："
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/LF_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="2dp"
+        android:text="購買重量："
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/LF_weight2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:text="斤："
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/LF_weight3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:text="公斤："
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/LF_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="2dp"
+        android:text="總共：N/A"
+        android:textSize="30sp" />
+
+</LinearLayout>

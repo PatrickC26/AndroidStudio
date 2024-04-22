@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundGravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/L_info"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="性別"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/RG_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <RadioButton
+            android:id="@+id/RB_boy"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:text="男"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/RB_girl"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:text="女"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/L_heigth"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="身高"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/T_height"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:ems="10"
+        android:inputType="numberSigned|number|numberDecimal"
+        android:padding="10dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/B_caculatie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="caculate"
+        android:padding="10dp"
+        android:text="計算" />
+
+</LinearLayout>

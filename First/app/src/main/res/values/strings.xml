@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">First</string>
+    <string name="lastpage">上一頁</string>
+    <string name="nextpage">下一頁</string>
+</resources>

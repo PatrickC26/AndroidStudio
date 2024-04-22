@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="type : "
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/foodkind"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/burger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hamburger $95" />
+
+        <RadioButton
+            android:id="@+id/toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="toast $90" />
+
+        <RadioButton
+            android:id="@+id/croissant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="croissant $100" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txvB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="您選的是："
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="備註："
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/chk1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ＮＯ醃漬(0)" />
+
+        <CheckBox
+            android:id="@+id/chk2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="加肉（20)" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/chk3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="歐姆蛋(15)" />
+
+        <CheckBox
+            android:id="@+id/chk4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="cheese (10)" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txvD"
+        android:layout_width="match_parent"
+        android:layout_height="213dp"
+        android:text="請點餐"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txvP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="您的餐點價格為：NT$"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="長按關" />
+
+</LinearLayout>
